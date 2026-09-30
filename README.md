@@ -1,0 +1,1 @@
+Student Project Portal is a MERN stack web application designed to help students manage and showcase their projects in one place. It provides a simple and user-friendly platform to add, view, and manage student project details. The application is built using MongoDB, Express.js, React.js, and Node.js.
