@@ -1,0 +1,51 @@
+:root {
+  --bg: #0e1b2b;
+  --bg-soft: #142840;
+  --surface: #1b3354;
+  --surface-line: #2a4870;
+  --accent: #ffb454;
+  --accent-2: #5fd4c1;
+  --text: #eaf0f6;
+  --text-muted: #93a6bd;
+  --danger: #ff7a7a;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --radius: 10px;
+  --max-width: 1140px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--surface-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--surface-line) 1px, transparent 1px);
+  background-size: 36px 36px;
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
